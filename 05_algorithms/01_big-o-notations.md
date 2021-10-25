@@ -1,3 +1,4 @@
+
 # The Big O Notation
 * it is a way of generalizing code and talking about it and comparing code ind its performance to other pieces of code;
 
