@@ -1,9 +1,10 @@
 /**
+ * Manipulate Arrays
  * `push()` - ADD data at the end of the array
  * `pop()` - REMOVE an element of the END pf an array
  * `shift()` - REMOVE the FIRST element of an array
  * `unshift()` - ADD an element at the START of an array
-
+ * 
  * In Computer Science a queue is an abstract Data Structure where items are kept in order. 
  * New items can be added at the back of the queue and old items are taken off from the front of the queue.
  * 
