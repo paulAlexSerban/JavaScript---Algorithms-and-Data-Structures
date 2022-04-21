@@ -27,7 +27,7 @@ doSomething(); //Uncaught ReferenceError: x is not defined
 
 function doSomething() {
   var x = 1;
-  var x = 2;
+  x = 2;
   console.log(x);
 }
 
@@ -39,7 +39,7 @@ doSomething();
 
 function doSomething() {
   let x = 1;
-  let x = 2;
+  x = 2;
 }
 //Uncaught SyntaxError: Identifier 'x' has already been declared
 
@@ -49,7 +49,7 @@ function doSomething() {
 
  let x = 1;
  {
-   let x = 2;
+  x = 2;
  }
  console.log(x); //1
  
@@ -59,7 +59,7 @@ function doSomething() {
  
   var x = 1;
   { 
-    var x = 2;
+    x = 2;
   }
   console.log(x); //2
 
