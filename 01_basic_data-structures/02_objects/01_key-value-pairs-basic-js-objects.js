@@ -1,3 +1,7 @@
+/* -------------------------------------------------- *\
+ OBJECTS & KEY-VALUE PAIRS
+\* -------------------------------------------------- */
+
 /**
  * At their most basic, objects are just collections of key-value pairs.
  * In other words, they are pieces of data (values) mapped to unique identifiers called properties (keys);
@@ -11,6 +15,7 @@
  * For example, all cars have wheels, but not all cars have the same number of wheels.
  * Objects in JavaScript are used to model real-world objects, giving them properties and behavior just like their real-world counterparts.
  */
+console.log("< === Objects in JS === >");
 
 const tekkenCharacter = {
   player: "Hwoarang",
@@ -27,3 +32,7 @@ let dog = {
   name: "George",
   numLegs: 4,
 };
+
+console.log({ tekkenCharacter });
+console.log({ duck });
+console.log({ dog });
