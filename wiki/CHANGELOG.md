@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.1.0...v1.2.0) (2022-10-21)
+
+
+### Features
+
+* **basics:** add basic control flow exercies ([5876ecf](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/5876ecff6d0eff40138b502e1928b8d190b7c8a3))
+* **basics:** added some js basics ([29368e1](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/29368e1eb232deea1fa81815df872bd4cac90020))
+* **loops:** added loops basics ([062a653](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/062a653a4a523c0a3bca31ed4f274c00c248dd10))
+
 # [1.1.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.0.0...v1.1.0) (2022-09-16)
 
 
