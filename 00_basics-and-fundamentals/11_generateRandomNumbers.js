@@ -1,9 +1,15 @@
+
+/**
+ *  * - Math is a built-in object that has properties and methods
+ * for mathematical constants and functions. It's not a function object.
+ */
+
 /**
  * Fractions
  *
  * Random numbers are useful for creating random behavior.
  * JavaScript has a `Math.random()` function that generates a random decimal number between 0 (inclusive) and 1 (exclusive).
- * Thus Math.random() can return a 0 but never return a 1.
+ * Thus `Math.random()` can return a 0 but never return a 1.
  * Note: Like Storing Values with the Assignment Operator, all function calls will be resolved before the return executes, so we can return the value of the Math.random() function.
  */
 
@@ -36,9 +42,9 @@ console.log("randomWholeNum", randomWholeNum());
  * Instead of generating a random whole number between zero and a given number like we did before, we can generate a random whole number that falls within a range of two specific numbers.
 
   * that takes a range `myMin` and `myMax` and returns a random whole number that's greater than or equal to `myMin`, and is less than or equal to myMax, inclusive.
-  * @param {*} myMin 
-  * @param {*} myMax 
-  * @returns 
+  * @param {*} myMin
+  * @param {*} myMax
+  * @returns
   */
 
 function randomRange(myMin, myMax) {

@@ -84,7 +84,7 @@ console.log("New Employee=> ", shallowNewEmployee);
  */
 
 /* -------------------------------------------------- *\
- DEEP COPY
+ DEEP COPY - cloning an object
 \* -------------------------------------------------- */
 
 /**
@@ -208,3 +208,18 @@ console.log(deepCopy.details());
  * Both the objects have different properties after the modification.
  * Also methods of each object is differently defined and produce different output.
  */
+
+
+/**
+ * The simplest way - with spread operator
+ */
+
+const circle = {
+  radius: 1,
+  draw() {
+    console.log('draw')
+  }
+}
+
+const anotherCircle = {...circle};
+console.log(anotherCircle);
