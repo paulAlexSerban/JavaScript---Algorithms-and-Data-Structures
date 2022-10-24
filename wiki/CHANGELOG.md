@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.2.0...v1.3.0) (2022-10-24)
+
+
+### Features
+
+* **oop:** added some oop exercises ([fb7f785](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/fb7f785ad83acedd2eaa0e67a81254fdc6194cac))
+
 # [1.2.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.1.0...v1.2.0) (2022-10-21)
 
 
