@@ -1,3 +1,11 @@
+function sumOld() {
+  let total = 0;
+  for(let value of arguments) {
+    total += value
+  }
+  return total
+}
+
 /**
  * Use the Rest Parameter with Function Parameters
  * In order to help us create more flexible functions, ES6 introduces the rest parameter for function parameters.
@@ -58,3 +66,14 @@ function fullName(first, last, ...titles) {
 const multiply2 = (...nums) => (
   nums.reduce((total, currVal) => total * currVal)
 )
+
+// sum of arguments
+function sumArgs(...items) {
+  if((items.length === 1) && Array.isArray(items[0])) {
+    items = [...items[0]]
+  }
+
+  return items.reduce((a, b) => a + b);
+}
+
+console.log(sumArgs([1, 2, 3, 4]))
