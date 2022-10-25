@@ -1,3 +1,11 @@
+# [1.4.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.3.0...v1.4.0) (2022-10-25)
+
+
+### Features
+
+* **arrays:** added some array exercises ([f6cd390](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/f6cd39048f3ee99ac503e528f8585e533b48a1ef))
+* **functions:** add new examples ([1fc76a9](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/1fc76a928c6cc9c5201005d5ec3c23bded956af0))
+
 # [1.3.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.2.0...v1.3.0) (2022-10-24)
 
 
