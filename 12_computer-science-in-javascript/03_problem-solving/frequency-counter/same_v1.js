@@ -1,6 +1,6 @@
 const tools = require("../tools");
 /**
- * write a function called `some`, which accept two arrays
+ * write a function called `same`, which accept two arrays
  * the function should return true if every value in the array is corresponding to value squared in the second array
  * the frequency of the value must be the same
  */
