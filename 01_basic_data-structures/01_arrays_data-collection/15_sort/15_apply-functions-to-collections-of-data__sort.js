@@ -1,12 +1,5 @@
-const nums = [34, 35, 67, 54, 109, 102, 32, 9];
 
-const odds = nums.filter(n => n % 2 === 1);
-const evens = nums.filter(n => n % 2 === 0);
-const bigNums = nums.filter(n => n > 50);
 
-console.log(`${odds}
-${evens}
-${bigNums}`)
 
 const books = [{
     title: 'Good Omens',
@@ -64,27 +57,6 @@ const books = [{
   }
 ]
 
-
-//All books rated over 4.3:
-const goodBooks = books.filter(b => b.rating > 4.3);
-console.log(goodBooks);
-
-// All books with fantasy as a genre:
-const fantasyBooks = books.filter(book => (
-  book.genres.includes('fantasy')
-))
-console.log(fantasyBooks)
-
-// all books that are either short stories or essays:
-const shortForm = books.filter(book => (
-  book.genres.includes('short stories') || book.genres.includes('essays')
-))
-console.log(shortForm)
-
-// Simple search functionality:
-const query = 'The';
-const results = books.filter(book => {
-  const title = book.title.toLowerCase();
-  return title.includes(query.toLowerCase())
-})
-console.log(query)
+// Sorting books by their rating:
+books.sort((a, b) => b.rating - a.rating)
+console.log(books)

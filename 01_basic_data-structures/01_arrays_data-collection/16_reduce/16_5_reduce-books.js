@@ -1,19 +1,3 @@
-const prices = [400.50, 3000, 99.99, 35.99, 12.00, 9500];
-// REMEMBER THAT SORT() MUTATES THE ORIGINAL ARRAY!
-// I'm using slice() to create a new copy, otherwise we would be sorting the same array 3 times:
-
-// Default string sort :( 
-const badSort = prices.slice().sort();
-console.log(badSort);
-
-// Ascending Sort:
-const ascSort = prices.slice().sort((a, b) => a - b);
-console.log(ascSort);
-
-// Descending Sort:
-const descSort = prices.slice().sort((a, b) => b - a);
-console.log(descSort);
-
 
 const books = [{
     title: 'Good Omens',
@@ -58,6 +42,12 @@ const books = [{
     genres: ['fiction', 'short stories']
   },
   {
+    title: 'A Truly Horrible Book',
+    authors: ['Xavier Time'],
+    rating: 2.18,
+    genres: ['fiction', 'garbage']
+  },
+  {
     title: 'The Way of Kings',
     authors: ['Brandon Sanderson'],
     rating: 4.65,
@@ -70,7 +60,12 @@ const books = [{
     genres: ['fiction']
   }
 ]
+// To group books by rating:
+const groupedByRatings = books.reduce((groupedBooks, book) => {
+  const key = Math.floor(book.rating);
+  if (!groupedBooks[key]) groupedBooks[key] = [];
+  groupedBooks[key].push(book)
+  return groupedBooks;
+}, {})
 
-// Sorting books by their rating:
-books.sort((a, b) => b.rating - a.rating)
-console.log(books)
+console.log(groupedByRatings)

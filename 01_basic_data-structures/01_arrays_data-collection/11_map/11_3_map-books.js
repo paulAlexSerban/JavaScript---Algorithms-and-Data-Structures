@@ -2,32 +2,6 @@
   * map()
   * - creates a new array with the result of calling a callback on every element oin the array
   */
- console.log('map()');
-
-const numbers = [20, 21, 22, 23, 24, 25, 26, 27];
-const words = ['asap', 'byob', 'rsvp', 'diy'];
-
-//Map creates a new array by calling your callback function with each element in the original array.
-const doubles = numbers.map(function (num) {
-  return num * 2; //Need to return the value!
-});
-console.log(doubles)
-//[40, 42, 44, 46, 48, 50, 52, 54]
-
-const numDetail = numbers.map(function (n) {
-  return {
-    value: n,
-    isEven: n % 2 === 0
-  }
-})
-console.log(numDetail)
-
-const abbrevs = words.map(function (word) {
-  return word.toUpperCase().split('').join('.');
-})
-console.log(abbrevs)
-//["A.S.A.P", "B.Y.O.B", "R.S.V.P", "D.I.Y"]
-
 
 const books = [{
     title: 'Good Omens',
