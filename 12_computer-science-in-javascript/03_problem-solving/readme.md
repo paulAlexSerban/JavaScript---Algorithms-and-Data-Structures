@@ -74,13 +74,18 @@
 
 ### Frequency Counter
 
-- Frequency Counters:
-  - uses objects or sets to collect values and their frequencies of values, and you need to compare them to see if they have similar values, if their anagrams or anything else ... any time you compare two pieces of value and frequencies of certain piece happen
-  - this can often AVOID the need for nested loops or Big O such as `O(n^2)` operations with arrays / strings, and usually the Big O is `O(n)`
+- uses objects or sets to collect values and their frequencies of values, and you need to compare them to see if they have similar values, if their anagrams or anything else ... any time you compare two pieces of value and frequencies of certain piece happen
+- this can often AVOID the need for nested loops or Big O such as `O(n^2)` operations with arrays / strings, and usually the Big O is `O(n)`
 
 ### Multiple Pointers
 
+- creating pointers or values that correspond to an index ot position and move towards the beginning, end or middle based on a certain condition
+- very efficient for solving problems with minimal space complexity as well
+
 ### Sliding Window
+- involves creating a WINDOW which can either be an array or number from one position to another
+- depending on a certain condition, the WINDOW either increases or closes (and a new window is created)
+- very useful for keeping track of a subset of data in an array/string etc.
 
 ### Divide and Conquer
 
