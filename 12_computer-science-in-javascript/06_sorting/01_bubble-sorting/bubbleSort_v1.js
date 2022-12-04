@@ -1,4 +1,4 @@
-const swap = require("./swap/swap_es2015");
+const swap = require("../swap/swap_es2015");
 
 const bubbleSort = (arr) => {
   for (let i = arr.length; i > 0; i--) {

@@ -2,7 +2,7 @@
  * optimization so it does not go through already sorted items of the array
  */
 
-const swap = require("./swap/swap_es2015");
+const swap = require("../swap/swap_es2015");
 
 const bubbleSort = (arr) => {
   let noSwaps;
