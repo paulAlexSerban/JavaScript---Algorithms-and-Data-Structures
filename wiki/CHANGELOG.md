@@ -1,3 +1,29 @@
+# [1.6.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.5.0...v1.6.0) (2022-12-09)
+
+
+### Features
+
+* adjust folder structure ([e9e61ad](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/e9e61ada6c3aaecf17ea32801ee9f7ff1ab474c0))
+* **arrays:** add array methods examples ([0489dcc](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/0489dccadf7644e54fb97675585b88aec792d289))
+* **bubble-sort:** added bubble sort exercises ([f2c06ae](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/f2c06aedee6c34d7df2e80bf6c5a7d67d9e12629))
+* **computer science:** add computer science modules ([c7e8de7](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/c7e8de7e090bd5340f4efa49a1294c6987b49c0f))
+* **cs in js:** add problem solving patterns - frequency counter ([390b458](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/390b458ef67fe3f05cf07388577782744f43da34))
+* **data structures:** init advanced data structures ([fabd57d](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/fabd57d5a0ebc87a264767cddd97fc2284ab47b1))
+* **design-patterns:** add singleton examples ([6bdc9ed](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/6bdc9ed9e1aa5a5dccbfd09a223744a83889c97c))
+* **insertion sorting:** added insertion sorting and grouped basic sorting algorithms ([abb33ca](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/abb33ca734f1075b2b6c5fba6c0ca70078f7a0d7))
+* **js-plugin-system:** added a js plugin system ([f57cbc0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/f57cbc0f07efb5fe40e01489166fbe07291764fc))
+* **merge-sort:** added merge sort algorithm ([0584ac1](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/0584ac1f7e47806619d2fca030bee4b3292ecb1c))
+* **multiple-pointers:** added multiple pointers exercises ([0133f3c](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/0133f3c74678d756d888a0872d5e72c4d9179ec5))
+* **problem solving patterns:** multiple pointer patterns ([700fd4d](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/700fd4d84cef72703339af07c1f47e35de96164c))
+* **problem solving:** add some problem sovling exercises and solutions ([2a6c27a](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/2a6c27a0cf8928219fbd2b9cb1c2ac0ecbb6c43a))
+* **quick-sort:** add quick sort algorithm ([a8ed05e](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/a8ed05e13d96ba3f5da84eb307b92a2afa86551e))
+* **radix sort:** added radix sort algorithm ([5483f36](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/5483f368c019e5bd4c9ebe462b36edf820c25d9e))
+* **recursion:** add recursion exercises ([142e525](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/142e525ea82718bb5f52d8e353d494762fb92cf5))
+* **recursion:** add recursion exercises ([7c752b9](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/7c752b924a6d5ffb944a946b7b79cd0fa62a9ca6))
+* **search:** add searching alorithms ([ed942aa](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/ed942aa70e4651b203ec4f430388294bf007b1f6))
+* **selection-sort:** added selection sort exercises ([b33c074](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/b33c0742a9bb9c1471654e7bcc7623c6503fde36))
+* **sliding window:** add sliding window exercises ([c0e626d](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/c0e626d83b6e0d6b9eb8628cbceec171d6a51c1a))
+
 # [1.5.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.4.0...v1.5.0) (2022-10-31)
 
 
