@@ -6,6 +6,6 @@
 
 //  Recursive Solution
 
-const findElement = (arr, func) =>  arr.length && !func(arr[0]) ? findElement(arr.slice(1), func) : arr[0];
+const findElement = (arr, func) => (arr.length && !func(arr[0]) ? findElement(arr.slice(1), func) : arr[0]);
 
 console.log(findElement([1, 2, 3, 4], (num) => num % 2 === 0));
