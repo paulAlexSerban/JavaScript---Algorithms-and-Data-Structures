@@ -73,6 +73,7 @@ class Student {
     // the static keyword defines a static method for a class
     // static methods are called without instantiating their class and cannot be called through a class instance
     // static methods are often ued to create utility functions for and application
+    // the static method is attached to the class itself and not to the instances of the class
     return "Enrolling students"
   }
 }
