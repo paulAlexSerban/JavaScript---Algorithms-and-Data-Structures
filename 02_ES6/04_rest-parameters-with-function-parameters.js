@@ -1,9 +1,9 @@
 function sumOld() {
   let total = 0;
-  for(let value of arguments) {
-    total += value
+  for (let value of arguments) {
+    total += value;
   }
-  return total
+  return total;
 }
 
 /**
@@ -51,29 +51,31 @@ const multiply = () => {
 // New way using rest:
 function sum3(...nums) {
   return nums.reduce((total, currVal) => {
-    return total + currVal
-  })
+    return total + currVal;
+  });
 }
 
 //We can have named params and then collect the rest into an array:
 function fullName(first, last, ...titles) {
-  console.log('first', first)
-  console.log('last', last)
-  console.log('titles', titles)
+  console.log("first", first);
+  console.log("last", last);
+  console.log("titles", titles);
 }
 
 // We can use rest parameters in arrow functions!
-const multiply2 = (...nums) => (
-  nums.reduce((total, currVal) => total * currVal)
-)
+const multiply2 = (...nums) => nums.reduce((total, currVal) => total * currVal);
 
 // sum of arguments
 function sumArgs(...items) {
-  if((items.length === 1) && Array.isArray(items[0])) {
-    items = [...items[0]]
+  if (items.length === 1 && Array.isArray(items[0])) {
+    items = [...items[0]];
   }
 
   return items.reduce((a, b) => a + b);
 }
 
-console.log(sumArgs([1, 2, 3, 4]))
+console.log(sumArgs([1, 2, 3, 4]));
+
+const [a, b, ...others] = [1, 2, 3, 4, 5, 6];
+console.log(a); // 1
+console.log(others); // [ 3, 4, 5, 6 ]

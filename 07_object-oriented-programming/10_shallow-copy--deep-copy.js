@@ -209,7 +209,6 @@ console.log(deepCopy.details());
  * Also methods of each object is differently defined and produce different output.
  */
 
-
 /**
  * The simplest way - with spread operator
  */
@@ -217,9 +216,29 @@ console.log(deepCopy.details());
 const circle = {
   radius: 1,
   draw() {
-    console.log('draw')
-  }
-}
+    console.log("draw");
+  },
+};
 
-const anotherCircle = {...circle};
+const anotherCircle = { ...circle };
 console.log(anotherCircle);
+
+/**
+ * with reference types, whatever we change in a copy will also be visible in the original
+ */
+
+const flight = "LH234";
+const jonas = {
+  name: "Jonas Schmedmann",
+  passport: 123121333,
+};
+
+const checkIn = (flightNum, passenger) => {
+  flightNum = "LH999"; // this is not going to change the value of flight
+  passenger.name = "Mr " + passenger.name; // as passenger is a reference to the object
+};
+
+checkIn(flight, jonas);
+console.log(flight);
+console.log(jonas);
+
