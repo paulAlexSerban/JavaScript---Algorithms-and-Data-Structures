@@ -2,7 +2,7 @@
  * For a complete description of the concepts practiced in this ticket check the Java / BasicJava / Basics-and-Fundamentals
  */
 
-function data_types () {
+function DataTypes() {
   /**
    * Integer
    * it is whole number
@@ -46,4 +46,4 @@ function data_types () {
   console.log(firstStringObject);
 }
 
-data_types ();
+DataTypes();
