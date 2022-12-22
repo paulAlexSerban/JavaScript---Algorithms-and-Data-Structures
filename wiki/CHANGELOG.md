@@ -1,3 +1,14 @@
+# [1.7.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.6.0...v1.7.0) (2022-12-22)
+
+
+### Features
+
+* **algorithms:** added new exercises in algorithms ([0c818ff](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/0c818ff23dab8e9df4f0670ce4b6bb02e2305c46))
+* **array:** new array execises ([5cf50bb](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/5cf50bb32c3fc31cf8b770414a9e6c82eab4b55d))
+* **call apply bind closures:** added examples for functional programming ([827042a](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/827042ab848dcf03598a7cbd7eccb1709d9a12d6))
+* **es6:** added es6 examples ([75ad596](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/75ad596d41bffd8cf1f24a24b60294e7c5293c83))
+* **lists:** added singly-linked-list ([d1fa395](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/commit/d1fa39507cd4f89e1c144a0f522787b5bf1c2782))
+
 # [1.6.0](https://github.com/paulAlexSerban/wbk--algorithms-n-data-structures--javascript/compare/v1.5.0...v1.6.0) (2022-12-09)
 
 
