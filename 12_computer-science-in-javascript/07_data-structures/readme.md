@@ -6,3 +6,5 @@
 ## Why care?
 - the more time you spend as a developer, the more likely you will need to use one of these data structures
 - you have already worked with many data structures unknowingly
+
+## Compare Sinlgy Linked Lists VS Doubly Linked Lists
