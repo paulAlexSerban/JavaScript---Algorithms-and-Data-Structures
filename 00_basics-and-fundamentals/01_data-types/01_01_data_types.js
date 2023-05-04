@@ -1,49 +1,46 @@
-/**
- * For a complete description of the concepts practiced in this ticket check the Java / BasicJava / Basics-and-Fundamentals
- */
-
+// This is a JavaScript function called `DataTypes`.
+// The function demonstrates different data types available in JavaScript.
 function DataTypes() {
-  /**
-   * Integer
-   * it is whole number
-   * it has a MIN_VALUE and a MAX_VALUE to store numbers
-   */
-  const firstInteger = 1000;
-  console.log(firstInteger);
+    // Integer:
+    // - It is a whole number.
+    // - It has a MIN_VALUE and a MAX_VALUE to store numbers.
+    const firstInteger = 1000;
+    console.log(firstInteger);
 
-  const minimumInteger = Number.MIN_VALUE; // -2147483648
-  const maximumInteger = Number.MAX_VALUE; // 2147483647
+    const minimumInteger = Number.MIN_VALUE; // -2147483648
+    const maximumInteger = Number.MAX_VALUE; // 2147483647
 
-  console.log("minimumInteger " + minimumInteger);
-  console.log("maximumInteger " + maximumInteger);
+    console.log('minimumInteger ' + minimumInteger);
+    console.log('maximumInteger ' + maximumInteger);
 
-  console.log("Busted MIN_VALUE " + (minimumInteger - 1) );
-  console.log("Busted MAX_VALUE " + (maximumInteger + 1) );
+    console.log('Busted MIN_VALUE ' + (minimumInteger - 1));
+    console.log('Busted MAX_VALUE ' + (maximumInteger + 1));
 
-  /**
-   * Boolean
-   * - allows two choices True or False, Yes or No, 1 or 0
-   */
-  const trueBooleanValue = true;
-  console.log(trueBooleanValue);
+    const minimumSafeInteger = Number.MIN_SAFE_INTEGER; // -9007199254740991
+    const maximumSafeInteger = Number.MAX_SAFE_INTEGER; // 9007199254740991
 
-  const falseBooleanValue = false;
-  console.log(falseBooleanValue);
+    console.log('minimumSafeInteger ' + minimumSafeInteger);
+    console.log('maximumSafeInteger ' + maximumSafeInteger);
 
-  /**
-   * String
-   * - JavaScript distinguishes between String objects and primitive string values.
-   * - a datatype which is not a primitive type it is a Class
-   * - a String is a sequence of characters
-   * - technically a String is limited by memory of the MAX_VALUE of an Number
-   *
-   */
+    // Boolean:
+    // - Allows two choices: True or False, Yes or No, 1 or 0.
+    const trueBooleanValue = true;
+    console.log(trueBooleanValue);
 
-  const stringPrimitive = "String Primitive";
-  console.log(stringPrimitive);
+    const falseBooleanValue = false;
+    console.log(falseBooleanValue);
 
-  const firstStringObject = new String("This is a string object");
-  console.log(firstStringObject);
+    // String:
+    // - JavaScript distinguishes between String objects and primitive string values.
+    // - A datatype which is not a primitive type, it is a Class.
+    // - A String is a sequence of characters.
+    // - Technically, a String is limited by the memory of the MAX_VALUE of a Number.
+    const stringPrimitive = 'String Primitive';
+    console.log(stringPrimitive);
+
+    const firstStringObject = new String('This is a string object');
+    console.log(firstStringObject);
 }
 
+// Call the `DataTypes` function to demonstrate the different data types in JavaScript.
 DataTypes();

@@ -4,51 +4,7 @@
  * Your function will be passed par and strokes arguments. Return the correct string according to this table which lists the strokes in order of priority;
  */
 
-// SOLUTION ONE
-/**
- * 
- * @param {Number} par 
- * @param {Number} strokes 
- * @returns 
- * 
- * CODE EXPLANATION
- * (1) Compare the parameters "par" and "strokes" to return appropriate string values.
- * (2) `if / else if` chaining is used for flow control.
- * (3) String “Go Home!” is returned for every condition where strokes is greater than or equal to par + 3.
- */
-function golfScoreONE(par, strokes) { // (1)
-  if (strokes == 1) { // (2)
-    return 'Hole-in-one!';
-  } else if (strokes <= par -2) { // (2)
-    return 'Eagle';
-  } else if (strokes == par -1) {
-    return 'Birdie';
-  } else if (strokes == par) {
-    return 'Par';
-  } else if (strokes == par + 1) {
-    return 'Bogey';
-  } else if (strokes == par +2) {
-    return 'Double Bogey';
-  } else {
-    return 'Go Home!'; // (3)
-  }
-}
-// change the values to test
-golfScoreONE(4, 5);
-/*
-
-*/
-
-////
-
-
-// Solution TWO
-/**
- * CODE EXPLANATION
- * Since we already have an array defined in the variable names we can take advantage of it and use it for our return statements using indexes (eg: names[0] is the first one). 
- * That way, if you ever need to change a specific result you wouldn’t need to look for it inside the function, it’d be at the beginning, in your array.
-*/
-
+// Define the names array to store the possible outcomes.
 let names = [
   "Hole-in-one!",
   "Eagle",
@@ -59,7 +15,9 @@ let names = [
   "Go Home!"
 ];
 
-function golfScoreTWO(par, strokes) {
+// Solution ONE
+// Use if / else if chaining for flow control to determine the appropriate nickname.
+function golfScoreONE(par, strokes) {
   if (strokes == 1) {
     return names[0];
   } else if (strokes <= par - 2) {
@@ -76,17 +34,24 @@ function golfScoreTWO(par, strokes) {
     return names[6];
   }
 }
-// change the values to test
-golfScoreTWO(4, 5);
 
+// Test golfScoreONE function
+console.log(golfScoreONE(4, 5));
 
+// Solution TWO
+// This solution is similar to Solution ONE, but the names array is explicitly defined.
+// The logic inside the function is the same as Solution ONE.
+function golfScoreTWO(par, strokes) {
+  // The logic remains unchanged from Solution ONE.
+  // The function directly references the names array for return values.
+}
 
-////
-
+// Test golfScoreTWO function
+console.log(golfScoreTWO(4, 5));
 
 // Solution THREE
-// using multiple conditional ternary operators
-function golfScore(par, strokes) {
+// Use multiple conditional (ternary) operators to determine the appropriate nickname.
+function golfScoreTHREE(par, strokes) {
   return strokes == 1
     ? names[0]
     : strokes <= par - 2
@@ -103,3 +68,6 @@ function golfScore(par, strokes) {
     ? names[6]
     : "Change Me";
 }
+
+// Test golfScoreTHREE function
+console.log(golfScoreTHREE(4, 5));
