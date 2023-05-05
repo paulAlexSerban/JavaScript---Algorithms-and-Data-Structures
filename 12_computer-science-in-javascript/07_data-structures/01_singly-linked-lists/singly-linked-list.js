@@ -122,7 +122,7 @@ class SinglyLinkedList {
    * Pseudocode:
    * - the function accepts an @param {*} index
    * - if the index is less than zero, or greater than or equal to the length of the list, return null
-   * - lop through the list until you reach the index and return the node at that specific index
+   * - loop through the list until you reach the index and return the node at that specific index
    * - @return {Node}
    */
 
@@ -147,7 +147,7 @@ class SinglyLinkedList {
    */
   set(index, val) {
     const foundNode = this.get(index);
-    if (foundNode) {
+    if (foundNode != null) {
       foundNode.val = val;
       return true;
     }
@@ -168,15 +168,17 @@ class SinglyLinkedList {
    */
   insert(index, value) {
     if (index < 0 || index > this.length) return false;
-    if (index === this.length) return this.push(value);
-    if (index === 0) return this.unshift(value);
+    if (index === this.length) return !!this.push(value);
+    if (index === 0) return !!this.unshift(value);
 
     const newNode = new Node(value);
     const previous = this.get(index - 1);
     const temp = previous.next;
+
     previous.next = newNode;
     newNode.next = temp;
     this.length++;
+
     return true;
   }
 
@@ -196,6 +198,7 @@ class SinglyLinkedList {
     if (index < 0 || index >= this.length) return undefined;
     if (index === 0) return this.shift();
     if (index === this.length - 1) return this.pop();
+
     const previous = this.get(index - 1);
     const removed = previous.next;
     previous.next = removed.next;
@@ -215,28 +218,28 @@ class SinglyLinkedList {
    * - set the prev to be the value of the node variable
    * - set the node variable to be the value of the next variable
    */
-   reverse() {
+  reverse() {
     let node = this.head;
     this.head = this.tail;
     this.tail = node;
     let next;
     let prev = null;
-    for(let i = 0; i < this.length; i++) {
-        // references old list
-        next = node.next;
-        // updating new list using variable pass by reference of old list
-        // same as this.head.next x i (counter)
-        node.next = prev;
-        // update variables for next run
-        prev = node;
-        node = next;
+    for (let i = 0; i < this.length; i++) {
+      // references old list
+      next = node.next;
+      // updating new list using variable pass by reference of old list
+      // same as this.head.next x i (counter)
+      node.next = prev;
+      // update variables for next run
+      prev = node;
+      node = next;
     }
     return this;
-}
+  }
 
   reverseRecursive() {
     if (!this.length) return undefined;
-    const reverseRecursive = function(node, prev) {
+    const reverseRecursive = function (node, prev) {
       if (node.next) reverseRecursive(node.next, node);
       node.next = prev;
     };
