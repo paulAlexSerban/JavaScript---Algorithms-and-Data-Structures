@@ -17,7 +17,7 @@ let names = [
 
 // Solution ONE
 // Use if / else if chaining for flow control to determine the appropriate nickname.
-function golfScoreONE(par, strokes) {
+function golfScore(par, strokes) {
   if (strokes == 1) {
     return names[0];
   } else if (strokes <= par - 2) {
@@ -51,7 +51,8 @@ console.log(golfScoreTWO(4, 5));
 
 // Solution THREE
 // Use multiple conditional (ternary) operators to determine the appropriate nickname.
-function golfScoreTHREE(par, strokes) {
+
+function golfScore(par, strokes) {
   return strokes == 1
     ? names[0]
     : strokes <= par - 2
