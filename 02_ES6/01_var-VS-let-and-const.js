@@ -2,9 +2,9 @@
  * Variables declared with var have only function scope. Even more, variables declared with var are hoisted to the top of their scope. This way they can be accessed before being declared. Take a look at the code below:
  */
 
- function doSomething() {
-  console.log(x);
-  var x = 1;
+function doSomething() {
+    console.log(x);
+    var x = 1;
 }
 
 doSomething(); //undefined
@@ -14,8 +14,8 @@ doSomething(); //undefined
  */
 
 function doSomething() {
-  console.log(x);
-  let x = 1;
+    console.log(x);
+    let x = 1;
 }
 
 doSomething(); //Uncaught ReferenceError: x is not defined
@@ -26,9 +26,9 @@ doSomething(); //Uncaught ReferenceError: x is not defined
  */
 
 function doSomething() {
-  var x = 1;
-  x = 2;
-  console.log(x);
+    var x = 1;
+    x = 2;
+    console.log(x);
 }
 
 doSomething();
@@ -38,8 +38,8 @@ doSomething();
  */
 
 function doSomething() {
-  let x = 1;
-  x = 2;
+    let x = 1;
+    x = 2;
 }
 //Uncaught SyntaxError: Identifier 'x' has already been declared
 
@@ -47,21 +47,21 @@ function doSomething() {
  * Variables declared with let and const can have block scope. They can only be accessed in the block in which they are defined.
  */
 
- let x = 1;
- {
-  x = 2;
- }
- console.log(x); //1
- 
- /**
-  * In contrast, the var declaration has no block scope:
-  */
- 
-  var x = 1;
-  { 
+{
+    let x = 1;
     x = 2;
-  }
-  console.log(x); //2
+}
+console.log(x); //1
+
+/**
+ * In contrast, the var declaration has no block scope:
+ */
+
+var x = 1;
+{
+    x = 2;
+}
+console.log(x); //2
 
 /**
  * NOTE

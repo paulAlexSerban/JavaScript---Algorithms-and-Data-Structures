@@ -27,7 +27,7 @@ console.log(increment(5)); // returns 6
 
 // The new super clean way of adding defaults!
 function multiply(x, y = 1) {
-  return x * y;
+    return x * y;
 }
 multiply(3, 4); //12
 multiply(3); //3

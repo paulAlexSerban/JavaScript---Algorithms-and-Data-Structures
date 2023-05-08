@@ -3,20 +3,20 @@
  */
 
 function User(firstName, lastName) {
-  // do we have an existing instance?
-  if (typeof User.instance === "object") {
-    return User.instance;
-  }
+    // do we have an existing instance?
+    if (typeof User.instance === "object") {
+        return User.instance;
+    }
 
-  // proceed as normal
-  this.firstName = firstName;
-  this.lastName = lastName;
+    // proceed as normal
+    this.firstName = firstName;
+    this.lastName = lastName;
 
-  // cache
-  User.instance = this;
+    // cache
+    User.instance = this;
 
-  // implicit return
-  // return this;
+    // implicit return
+    // return this;
 }
 
 /**
@@ -27,7 +27,7 @@ function User(firstName, lastName) {
  */
 
 const userOne = new User("John", "Snow");
-console.log(userOne) // => User { firstName: 'John', lastName: 'Snow' }
+console.log(userOne); // => User { firstName: 'John', lastName: 'Snow' }
 
 const userTwo = new User("Jon", "Dow");
-console.log(userTwo) // => User { firstName: 'John', lastName: 'Snow' }
+console.log(userTwo); // => User { firstName: 'John', lastName: 'Snow' }

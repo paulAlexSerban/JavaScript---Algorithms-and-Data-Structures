@@ -5,21 +5,21 @@
 
 var User;
 (function () {
-  var instance;
+    var instance;
 
-  User = function User() {
-    if (instance) {
-      return instance;
-    }
+    User = function User() {
+        if (instance) {
+            return instance;
+        }
 
-    instance = this;
+        instance = this;
 
-    // all the functionality
-    this.firstName = "John";
-    this.lastName = "Doe";
+        // all the functionality
+        this.firstName = "John";
+        this.lastName = "Doe";
 
-    return instance;
-  };
+        return instance;
+    };
 })();
 
 /**

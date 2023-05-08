@@ -1,2 +1,2 @@
-# Design Patterns in JavaScript
-* [Link to Repository]()
+# Resources
+- [Refactoring Guru](https://refactoring.guru/design-patterns)

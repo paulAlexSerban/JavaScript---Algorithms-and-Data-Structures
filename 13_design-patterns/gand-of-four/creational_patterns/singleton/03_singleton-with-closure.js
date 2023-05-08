@@ -3,28 +3,28 @@
  */
 
 function User(firstName, lastName) {
-  // the cached instance
-  var instance;
+    // the cached instance
+    var instance;
 
-  // rewrite the constructor
-  User = function () {
+    // rewrite the constructor
+    User = function () {
+        return instance;
+    };
+
+    // carry over the prototype
+    User.prototype = this;
+
+    // the instance
+    instance = new User();
+
+    // reset the constructor pointer
+    instance.constructor = User;
+
+    // all the functionality
+    instance.firstName = firstName;
+    instance.lastName = lastName;
+
     return instance;
-  };
-
-  // carry over the prototype
-  User.prototype = this;
-
-  // the instance
-  instance = new User();
-
-  // reset the constructor pointer
-  instance.constructor = User;
-
-  // all the functionality
-  instance.firstName = firstName;
-  instance.lastName = lastName;
-
-  return instance;
 }
 
 /**
@@ -34,7 +34,7 @@ function User(firstName, lastName) {
  */
 
 const userOne = new User("John", "Snow");
-console.log(userOne)
+console.log(userOne);
 /**
  * User {
  *  constructor: [Function: User],
