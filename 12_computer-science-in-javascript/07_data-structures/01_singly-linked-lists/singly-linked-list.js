@@ -237,6 +237,23 @@ class SinglyLinkedList {
     return this;
   }
 
+  rotate(place) {
+    if(place === 0 || place >= this.length) return this
+    if(place < 0) {
+      place = this.length + place
+    }
+    let current = this.head;
+    let counter = 0
+    while (counter < place) {
+      this.push(current.val)
+      this.shift(current.val)
+      current = current.next
+      counter++
+    }
+   
+    return this;
+  }
+
   reverseRecursive() {
     if (!this.length) return undefined;
     const reverseRecursive = function (node, prev) {
@@ -299,3 +316,7 @@ list.reverseRecursive();
 list.print();
 console.log("********************************");
 list.reverse();
+list.print();
+console.log("********************************");
+list.rotate(2)
+list.print();

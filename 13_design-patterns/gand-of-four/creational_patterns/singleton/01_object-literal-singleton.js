@@ -1,9 +1,9 @@
 const user = {
-	firstName: 'John',
-	lastName: 'Doe',
-	sayName: function() {
-		return this.firstName + ' ' + this.lastName;
-	}
+    firstName: "John",
+    lastName: "Doe",
+    sayName: function () {
+        return this.firstName + " " + this.lastName;
+    },
 };
 /**
  * - Once you create an object literal in JavaScript you've reserved a
