@@ -1,6 +1,5 @@
 /**
  * Linked Lists - Remove Duplicates
- * Task
  * A Node class is provided for you in the editor. A Node object has an integer data field,
  * data, and a Node instance pointer, next, pointing to another node (i.e.: the next node in a list).
  *
@@ -36,7 +35,9 @@
 
 
 function removeDuplicates(head) {
-  if (!head) return head; // Return head if it is null
+  if (!head) {
+    return head;
+  } // Return head if it is null
 
   let current = head; // Initialize current node as head
   while (current.next) {

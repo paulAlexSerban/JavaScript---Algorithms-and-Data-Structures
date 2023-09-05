@@ -55,7 +55,9 @@ class SinglyLinkedList {
    * - return the value of the node removed
    */
   pop() {
-    if (!this.head) return undefined;
+    if (!this.head) {
+      return undefined;
+    }
     let current = this.head;
     let newTail = current;
 
@@ -83,7 +85,9 @@ class SinglyLinkedList {
    * - return the value of the node removed
    */
   shift() {
-    if (!this.head) return undefined;
+    if (!this.head) {
+      return undefined;
+    }
     const currentHead = this.head;
     this.head = currentHead.next;
     this.length--;
@@ -127,7 +131,9 @@ class SinglyLinkedList {
    */
 
   get(index) {
-    if (index < 0 || index >= this.length) return null;
+    if (index < 0 || index >= this.length) {
+      return null;
+    }
     let counter = 0;
     let current = this.head;
     while (counter !== index) {
@@ -167,9 +173,15 @@ class SinglyLinkedList {
    * - return true
    */
   insert(index, value) {
-    if (index < 0 || index > this.length) return false;
-    if (index === this.length) return !!this.push(value);
-    if (index === 0) return !!this.unshift(value);
+    if (index < 0 || index > this.length) {
+      return false;
+    }
+    if (index === this.length) {
+      return !!this.push(value);
+    }
+    if (index === 0) {
+      return !!this.unshift(value);
+    }
 
     const newNode = new Node(value);
     const previous = this.get(index - 1);
@@ -195,9 +207,15 @@ class SinglyLinkedList {
    */
 
   remove(index) {
-    if (index < 0 || index >= this.length) return undefined;
-    if (index === 0) return this.shift();
-    if (index === this.length - 1) return this.pop();
+    if (index < 0 || index >= this.length) {
+      return undefined;
+    }
+    if (index === 0) {
+      return this.shift();
+    }
+    if (index === this.length - 1) {
+      return this.pop();
+    }
 
     const previous = this.get(index - 1);
     const removed = previous.next;
@@ -238,7 +256,9 @@ class SinglyLinkedList {
   }
 
   rotate(place) {
-    if(place === 0 || place >= this.length) return this
+    if (place === 0 || place >= this.length) {
+      return this
+    }
     if(place < 0) {
       place = this.length + place
     }
@@ -255,9 +275,13 @@ class SinglyLinkedList {
   }
 
   reverseRecursive() {
-    if (!this.length) return undefined;
+    if (!this.length) {
+      return undefined;
+    }
     const reverseRecursive = function (node, prev) {
-      if (node.next) reverseRecursive(node.next, node);
+      if (node.next) {
+        reverseRecursive(node.next, node);
+      }
       node.next = prev;
     };
     reverseRecursive(this.head);
