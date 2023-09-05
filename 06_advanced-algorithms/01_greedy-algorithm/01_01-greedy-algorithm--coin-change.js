@@ -19,13 +19,7 @@ function minCoinChange(coins, amount) {
   // accumulator - keeps track of the amount we've allocated so far
   let total = 0;
 
-  while (coins.length) {
-      // if we have made up the amount required, we will break out of the loop
-      if (total === amount) break;
-      
-      // if (total + coin) is not larger than the amount required:
-      // -- add the coin's value to the total
-      // -- add the coin's value to the result array
+  while (coins.length && !(total === amount)) {
       if (total + coin <= amount) {
           total += coin;
           result.push(coin);
@@ -39,7 +33,9 @@ function minCoinChange(coins, amount) {
 
   // if we have run out of coins, and we have not made up the amount required, 
   // it means that we can not make up the amount with the coins we had. 
-  if (!coins.length && total !== amount) return -1;
+  if (!coins.length && total !== amount) {
+    return -1;
+  }
 
   return result;
 }
