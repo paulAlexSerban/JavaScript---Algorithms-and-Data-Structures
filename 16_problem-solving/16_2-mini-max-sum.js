@@ -78,3 +78,39 @@ miniMaxSum(arr);
  * performance, sales forecasting, budgeting, stock market analysis, and project 
  * management.
  */
+
+/**
+ * Algorithm and Concepts Used:
+ * Finding the Minimum and Maximum Element: Using the spread operator ... with Math.min and Math.max functions to find the smallest and largest numbers in the array.
+ * 
+ * Calculating the Total Sum: Using Array.prototype.reduce() to find the sum of all elements in the array.
+ * 
+ * Calculating the Mini-Max Sum:
+ * Minimum Sum: Subtract the maximum value from the total sum (sum - max).
+ * Maximum Sum: Subtract the minimum value from the total sum (sum - min).
+ * 
+ * Code Walkthrough:
+ * 
+ * First, it finds the minimum and maximum values from the array using Math.min(...arr) and Math.max(...arr).
+ * 
+ * Second, it calculates the sum of all the array elements using the reduce() method.
+ * 
+ * Finally, it calculates:
+ * 
+ * minSum as the total sum minus the maximum element (sum - max).
+ * maxSum as the total sum minus the minimum element (sum - min).
+ * 
+ * And it logs the minSum and maxSum to the console.
+ * 
+ * Time Complexity:
+ * 
+ * The time complexity is O(n) because:
+ * 
+ * Finding the minimum and maximum elements takes O(n) time.
+ * 
+ * Calculating the sum of all elements also takes O(n) time.
+ * 
+ * Space Complexity:
+ * The space complexity is O(1) as we are using only a constant amount of extra space.
+ * 
+ */
