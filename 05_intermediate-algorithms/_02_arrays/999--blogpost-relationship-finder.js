@@ -116,3 +116,9 @@ postsWithRelatedPosts.forEach((post) => {
     console.log(post.relatedPosts);
     console.log('------------------');
 });
+
+/**
+ * Time complexity: O(n^2)
+ * Space complexity: O(n)
+ * Concepts: Array.prototype.map(), Array.prototype.filter(), Array.prototype.sort()
+ */
