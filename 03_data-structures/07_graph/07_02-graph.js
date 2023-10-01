@@ -18,7 +18,9 @@ class Graph {
      * @memberof Graph
      */
     addVertex(vertex) {
-        if (!this.adjacencyList[vertex]) this.adjacencyList[vertex] = [];
+        if (!this.adjacencyList[vertex]) {
+          this.adjacencyList[vertex] = [];
+        }
     }
 
     /**
