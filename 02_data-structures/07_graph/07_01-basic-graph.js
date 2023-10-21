@@ -1,34 +1,34 @@
 /**
  * Basic Graph
- * A graph is a non-linear data structure that can be looked at as a collection 
+ * A graph is a non-linear data structure that can be looked at as a collection
  * of vertices (or nodes) potentially connected by line segments named edges.
  */
 
 class Graph {
-  constructor() {
-    this.nodes = {};
-  }
-  
-  addNode(node) {
-    this.nodes[node] = [];
-  }
-
-  addEdge(node1, node2) {
-    this.nodes[node1].push(node2);
-    this.nodes[node2].push(node1);
-  }
-
-  showConnections() {
-    for (const node in this.nodes) {
-      let nodeConnections = this.nodes[node];
-      let connections = "";
-      let vertex;
-      for (vertex in nodeConnections) {
-        connections += nodeConnections[vertex] + " ";
-      }
-      console.log(node + "-->" + connections);
+    constructor() {
+        this.nodes = {};
     }
-  }
+
+    addNode(node) {
+        this.nodes[node] = [];
+    }
+
+    addEdge(node1, node2) {
+        this.nodes[node1].push(node2);
+        this.nodes[node2].push(node1);
+    }
+
+    showConnections() {
+        for (const node in this.nodes) {
+            let nodeConnections = this.nodes[node];
+            let connections = '';
+            let vertex;
+            for (vertex in nodeConnections) {
+                connections += nodeConnections[vertex] + ' ';
+            }
+            console.log(node + '-->' + connections);
+        }
+    }
 }
 
 let myGraph = new Graph();

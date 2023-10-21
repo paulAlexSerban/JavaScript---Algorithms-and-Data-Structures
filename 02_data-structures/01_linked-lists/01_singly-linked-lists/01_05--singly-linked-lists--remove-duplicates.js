@@ -33,31 +33,30 @@
  * @returns
  */
 
-
 function removeDuplicates(head) {
-  if (!head) {
-    return head;
-  } // Return head if it is null
+    if (!head) {
+        return head;
+    } // Return head if it is null
 
-  let current = head; // Initialize current node as head
-  while (current.next) {
-    // Iterate through the list
-    if (current.data === current.next.data) {
-      // If the current node's data is equal to the next node's data
-      current.next = current.next.next; // Remove the next node by updating the current node's next pointer
-    } else {
-      current = current.next; // Move to the next node
+    let current = head; // Initialize current node as head
+    while (current.next) {
+        // Iterate through the list
+        if (current.data === current.next.data) {
+            // If the current node's data is equal to the next node's data
+            current.next = current.next.next; // Remove the next node by updating the current node's next pointer
+        } else {
+            current = current.next; // Move to the next node
+        }
     }
-  }
-  return head;
+    return head;
 }
 
 // Define Node class
 class Node {
-  constructor(data) {
-    this.data = data;
-    this.next = null;
-  }
+    constructor(data) {
+        this.data = data;
+        this.next = null;
+    }
 }
 
 // Create linked list with some duplicates
@@ -74,6 +73,6 @@ const updatedHead = removeDuplicates(head);
 // Print updated linked list
 let current = updatedHead;
 while (current) {
-  console.log(current.data);
-  current = current.next;
+    console.log(current.data);
+    current = current.next;
 }

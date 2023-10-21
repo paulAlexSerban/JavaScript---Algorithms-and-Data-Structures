@@ -16,6 +16,7 @@ Workbook repository for algorithms and data structures implemented in JavaScript
 -   [Visualizing data structures and algorithms through animation](https://visualgo.net/en)
 
 ## 📬 Contact
+
 For inquiries, issues, or further information, feel free to contact me:
 
 GitHub: @paulAlexSerban

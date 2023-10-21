@@ -89,10 +89,10 @@ class Node {
 }
 
 let ER = new PriorityQueue();
-ER.enqueue("common cold", 5);
+ER.enqueue('common cold', 5);
 console.log(ER);
-ER.enqueue("gunshot wound", 1);
-ER.enqueue("high fever", 4);
-ER.enqueue("broken arm", 2);
+ER.enqueue('gunshot wound', 1);
+ER.enqueue('high fever', 4);
+ER.enqueue('broken arm', 2);
 console.log(ER);
-ER.enqueue("glass in foot", 3);
+ER.enqueue('glass in foot', 3);

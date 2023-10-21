@@ -62,57 +62,57 @@ class Graph {
 
 var graph = new Graph();
 
-graph.addVertex("A");
-graph.addVertex("B");
-graph.addVertex("C");
-graph.addVertex("D");
+graph.addVertex('A');
+graph.addVertex('B');
+graph.addVertex('C');
+graph.addVertex('D');
 
-graph.addEdge("A", "B");
-graph.addEdge("A", "C");
-graph.addEdge("B", "D");
-graph.addEdge("C", "D");
+graph.addEdge('A', 'B');
+graph.addEdge('A', 'C');
+graph.addEdge('B', 'D');
+graph.addEdge('C', 'D');
 
-graph.removeEdge("B", "A");
-graph.removeEdge("C", "D");
+graph.removeEdge('B', 'A');
+graph.removeEdge('C', 'D');
 
-console.log(graph.adjacencyList["A"]); //  // contains 'C'
-console.log(graph.adjacencyList["B"]); // contains 'D'
-console.log(graph.adjacencyList["C"]); // contains 'A'
-console.log(graph.adjacencyList["D"]); // contains 'B'
+console.log(graph.adjacencyList['A']); //  // contains 'C'
+console.log(graph.adjacencyList['B']); // contains 'D'
+console.log(graph.adjacencyList['C']); // contains 'A'
+console.log(graph.adjacencyList['D']); // contains 'B'
 
 var graph = new Graph();
 
-graph.addVertex("S");
-graph.addVertex("P");
-graph.addVertex("U");
-graph.addVertex("X");
-graph.addVertex("Q");
-graph.addVertex("Y");
-graph.addVertex("V");
-graph.addVertex("R");
-graph.addVertex("W");
-graph.addVertex("T");
+graph.addVertex('S');
+graph.addVertex('P');
+graph.addVertex('U');
+graph.addVertex('X');
+graph.addVertex('Q');
+graph.addVertex('Y');
+graph.addVertex('V');
+graph.addVertex('R');
+graph.addVertex('W');
+graph.addVertex('T');
 
-graph.addEdge("S", "P");
-graph.addEdge("S", "U");
+graph.addEdge('S', 'P');
+graph.addEdge('S', 'U');
 
-graph.addEdge("P", "X");
-graph.addEdge("U", "X");
+graph.addEdge('P', 'X');
+graph.addEdge('U', 'X');
 
-graph.addEdge("P", "Q");
-graph.addEdge("U", "V");
+graph.addEdge('P', 'Q');
+graph.addEdge('U', 'V');
 
-graph.addEdge("X", "Q");
-graph.addEdge("X", "Y");
-graph.addEdge("X", "V");
+graph.addEdge('X', 'Q');
+graph.addEdge('X', 'Y');
+graph.addEdge('X', 'V');
 
-graph.addEdge("Q", "R");
-graph.addEdge("Y", "R");
+graph.addEdge('Q', 'R');
+graph.addEdge('Y', 'R');
 
-graph.addEdge("Y", "W");
-graph.addEdge("V", "W");
+graph.addEdge('Y', 'W');
+graph.addEdge('V', 'W');
 
-graph.addEdge("R", "T");
-graph.addEdge("W", "T");
+graph.addEdge('R', 'T');
+graph.addEdge('W', 'T');
 
-console.log(graph.depthFirstSearch("S"));
+console.log(graph.depthFirstSearch('S'));

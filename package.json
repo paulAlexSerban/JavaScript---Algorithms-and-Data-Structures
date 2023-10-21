@@ -1,7 +1,15 @@
 {
-  "name": "wbk--dsa-js",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "paulAlexSerban <paul.alex.serban@gmail.com>",
-  "license": "MIT"
+    "name": "wbk--dsa-js",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "paulAlexSerban <paul.alex.serban@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "formats:check": "yarn prettier --check .",
+        "formats:write": "yarn prettier --write ."
+    },
+    "dependencies": {
+        "lerna": "^7.3.0",
+        "prettier": "^3.0.3"
+    }
 }

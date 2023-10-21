@@ -118,23 +118,23 @@ class HashTable {
 }
 
 let ht = new HashTable(17);
-ht.set("maroon", "#800000");
-ht.set("yellow", "#FFFF00");
-ht.set("olive", "#808000");
-ht.set("salmon", "#FA8072");
-ht.set("lightcoral", "#F08080");
-ht.set("mediumvioletred", "#C71585");
-ht.set("plum", "#DDA0DD");
+ht.set('maroon', '#800000');
+ht.set('yellow', '#FFFF00');
+ht.set('olive', '#808000');
+ht.set('salmon', '#FA8072');
+ht.set('lightcoral', '#F08080');
+ht.set('mediumvioletred', '#C71585');
+ht.set('plum', '#DDA0DD');
 
-console.log(ht.get("maroon")); // #800000
-console.log(ht.get("yellow")); // #FFFF00
-console.log(ht.get("olive")); // #808000
-console.log(ht.get("salmon")); // #FA8072
-console.log(ht.get("lightcoral")); // #F08080
-console.log(ht.get("mediumvioletred")); // #C71585
-console.log(ht.get("plum")); // #DDA0DD
-console.log(ht.get("cyan")); // undefined
-console.log(ht.get("blue")); // undefined
+console.log(ht.get('maroon')); // #800000
+console.log(ht.get('yellow')); // #FFFF00
+console.log(ht.get('olive')); // #808000
+console.log(ht.get('salmon')); // #FA8072
+console.log(ht.get('lightcoral')); // #F08080
+console.log(ht.get('mediumvioletred')); // #C71585
+console.log(ht.get('plum')); // #DDA0DD
+console.log(ht.get('cyan')); // undefined
+console.log(ht.get('blue')); // undefined
 
 console.log(ht.keys()); // [ 'maroon', 'yellow', 'olive', 'salmon', 'lightcoral', 'mediumvioletred', 'plum' ]
 console.log(ht.values()); // [ '#800000', '#FFFF00', '#808000', '#FA8072', '#F08080', '#C71585', '#DDA0DD' ]

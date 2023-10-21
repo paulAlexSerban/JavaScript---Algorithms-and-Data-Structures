@@ -140,20 +140,14 @@ class BinarySearchTree {
             if (!node) return 0;
             return Math.max(maxDepth(node.left) + 1, maxDepth(node.right) + 1);
         }
- 
+
         function minDepth(node) {
             if (!node) return 0;
             return Math.min(minDepth(node.left) + 1, minDepth(node.right) + 1);
         }
- 
-        let maximum = Math.max(
-            maxDepth(this.root.left),
-            maxDepth(this.root.right)
-        );
-        let minimum = Math.min(
-            minDepth(this.root.left),
-            minDepth(this.root.right)
-        );
+
+        let maximum = Math.max(maxDepth(this.root.left), maxDepth(this.root.right));
+        let minimum = Math.min(minDepth(this.root.left), minDepth(this.root.right));
         return maximum - minimum <= 1;
     }
 }

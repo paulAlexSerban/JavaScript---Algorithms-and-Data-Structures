@@ -1,4 +1,3 @@
-
 /**
  * Graph Traversing
  * There are two main ways of traversing a graph:
@@ -7,12 +6,12 @@
  */
 // Adjacency matrix
 const graph = {
-  'A': ['B', 'C'],
-  'B': ['A', 'D', 'E'],
-  'C': ['A', 'F'],
-  'D': ['B'],
-  'E': ['B', 'F'],
-  'F': ['C', 'E']
+    A: ['B', 'C'],
+    B: ['A', 'D', 'E'],
+    C: ['A', 'F'],
+    D: ['B'],
+    E: ['B', 'F'],
+    F: ['C', 'E'],
 };
 
 /**
@@ -29,32 +28,32 @@ const graph = {
  * - Add it to the result list
  * - Push all of its neighbours into the stack
  * Return the result array
- * 
- * @param {*} graph 
- * @param {*} startNode 
+ *
+ * @param {*} graph
+ * @param {*} startNode
  */
 function DFS(graph, startNode) {
-  let stack = [];    // To keep track of nodes to visit
-  let visited = {};  // To keep track of visited nodes
-  
-  stack.push(startNode);
-  
-  while(stack.length) {
-    let currentNode = stack.pop();
-    
-    // If we've already visited this node, skip it
-    if(visited[currentNode]) continue;
-    
-    console.log(currentNode);
-    
-    visited[currentNode] = true;
-    
-    let neighbours = graph[currentNode];
-    
-    for(let neighbour of neighbours) {
-      stack.push(neighbour);
+    let stack = []; // To keep track of nodes to visit
+    let visited = {}; // To keep track of visited nodes
+
+    stack.push(startNode);
+
+    while (stack.length) {
+        let currentNode = stack.pop();
+
+        // If we've already visited this node, skip it
+        if (visited[currentNode]) continue;
+
+        console.log(currentNode);
+
+        visited[currentNode] = true;
+
+        let neighbours = graph[currentNode];
+
+        for (let neighbour of neighbours) {
+            stack.push(neighbour);
+        }
     }
-  }
 }
 
 DFS(graph, 'A'); // A -> C -> F -> E -> B -> D
@@ -71,7 +70,7 @@ DFS(graph, 'A'); // A -> C -> F -> E -> B -> D
  * - Loop over each vertex in the adjacency list for the vertex you are visiting
  * - If it is not inside the object that stores nodes visited, mark it as visited and enqueue that vertex
  * Once you have finished looping, return the array of visited nodes
- * 
+ *
  * @param {*} graph
  * @param {*} startNode
  * @returns
@@ -79,27 +78,27 @@ DFS(graph, 'A'); // A -> C -> F -> E -> B -> D
  */
 
 function BFS(graph, startNode) {
-  let queue = [];    // To keep track of nodes to visit
-  let visited = {};  // To keep track of visited nodes
-  
-  queue.push(startNode);
-  
-  while(queue.length) {
-    let currentNode = queue.shift();
-    
-    // If we've already visited this node, skip it
-    if(visited[currentNode]) continue;
-    
-    console.log(currentNode);
-    
-    visited[currentNode] = true;
-    
-    let neighbours = graph[currentNode];
-    
-    for(let neighbour of neighbours) {
-      queue.push(neighbour);
+    let queue = []; // To keep track of nodes to visit
+    let visited = {}; // To keep track of visited nodes
+
+    queue.push(startNode);
+
+    while (queue.length) {
+        let currentNode = queue.shift();
+
+        // If we've already visited this node, skip it
+        if (visited[currentNode]) continue;
+
+        console.log(currentNode);
+
+        visited[currentNode] = true;
+
+        let neighbours = graph[currentNode];
+
+        for (let neighbour of neighbours) {
+            queue.push(neighbour);
+        }
     }
-  }
 }
 
 BFS(graph, 'A'); // A -> B -> C -> D -> E -> F

@@ -58,7 +58,7 @@ class HashTable {
  */
 
 let myHashTable = new HashTable(2);
-myHashTable.set("grapes", 10000);
-myHashTable.set("apples", 54);
-console.log(myHashTable.get("grapes")); // Outputs: 10000
-console.log(myHashTable.get("apples")); // Outputs: 54
+myHashTable.set('grapes', 10000);
+myHashTable.set('apples', 54);
+console.log(myHashTable.get('grapes')); // Outputs: 10000
+console.log(myHashTable.get('apples')); // Outputs: 54

@@ -18,7 +18,7 @@ class Queue {
      * - create a new node with that value
      * - if there are no nodes in the stack, set the first and last property to be the newly created node
      * - otherwise set the next property on the current last to be that node, and then set the last property of the queue to be that node
-     * @param {*} value 
+     * @param {*} value
      */
     enqueue(value) {
         const newNode = new Node(value);
@@ -54,11 +54,10 @@ class Queue {
     }
 }
 
-
 const queue = new Queue();
-queue.enqueue("element1");
-queue.enqueue("element2");
-console.log(queue.enqueue("element3")); // 3
+queue.enqueue('element1');
+queue.enqueue('element2');
+console.log(queue.enqueue('element3')); // 3
 console.log(queue); // element1, element2, element3
 console.log(queue.dequeue()); // element1
 console.log(queue);

@@ -64,5 +64,3 @@ console.log(mergeTwoLists(list3, list4)); // Output: []
 const list5 = [];
 const list6 = [0];
 console.log(mergeTwoLists(list5, list6)); // Output: [0]
-
-

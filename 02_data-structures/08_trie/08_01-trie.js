@@ -70,7 +70,7 @@ class Trie {
      * @param {*} currentWord
      * @returns
      */
-    getWords(words = [], currentWord = "") {
+    getWords(words = [], currentWord = '') {
         // This function will return all the words which are
         // contained in this Trie.
         // it will use currentWord as a prefix,
@@ -95,7 +95,7 @@ class Trie {
      * @param {*} currentWord
      * @returns
      */
-    autoComplete(prefix, words = [], currentWord = "") {
+    autoComplete(prefix, words = [], currentWord = '') {
         if (this.isWord) {
             if (currentWord.slice(0, prefix.length) === prefix) {
                 words.push(currentWord);
@@ -131,9 +131,9 @@ class Trie {
 }
 
 var firstTrie = new Trie();
-firstTrie.addWord("fun");
+firstTrie.addWord('fun');
 console.log(firstTrie.characters); // {f: Trie}
-!!firstTrie.characters["f"]; // true
+!!firstTrie.characters['f']; // true
 
 firstTrie.characters.f.characters.u; // {u: Trie}
 !!firstTrie.characters.f.characters.u; // true
@@ -145,11 +145,11 @@ firstTrie.characters.f.characters.u.characters.n.isWord; // true
 !!firstTrie.characters.f.characters.u.characters.l; // true
 
 var secondTrie = new Trie();
-secondTrie.addWord("ha");
-secondTrie.addWord("hat");
-secondTrie.addWord("has");
-secondTrie.addWord("have");
-secondTrie.addWord("hate");
+secondTrie.addWord('ha');
+secondTrie.addWord('hat');
+secondTrie.addWord('has');
+secondTrie.addWord('have');
+secondTrie.addWord('hate');
 
 secondTrie.characters.h.characters.a.isWord; // true
 secondTrie.characters.h.characters.a.characters.t.isWord; // true
@@ -160,19 +160,19 @@ secondTrie.characters.h.characters.a.characters.t.characters.e.isWord; // true
 Object.keys(secondTrie.characters.h.characters.a.characters).length; // 3
 
 var t = new Trie();
-t.addWord("fun");
-t.addWord("fast");
-t.addWord("fat");
-t.addWord("fate");
-t.addWord("father");
-t.addWord("forget");
-t.addWord("awesome");
-t.addWord("argue");
+t.addWord('fun');
+t.addWord('fast');
+t.addWord('fat');
+t.addWord('fate');
+t.addWord('father');
+t.addWord('forget');
+t.addWord('awesome');
+t.addWord('argue');
 
-t.removeWord("fat");
+t.removeWord('fat');
 t.characters.f.characters.a.characters.t.isWord; // false
 t.characters.f.characters.a.characters.t.characters.e.isWord; // true
 
-t.removeWord("argue");
+t.removeWord('argue');
 
 t.characters.a.characters.r; // undefined
