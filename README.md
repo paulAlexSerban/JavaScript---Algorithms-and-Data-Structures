@@ -1,4 +1,4 @@
-# JavaScript Algorithms and Data Structures Workbook
+# JavaScript Data Structures and Algorithms Workbook
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/paulAlexSerban/wbk--algorithms-n-data-structures--javascript) ![GitHub issues](https://img.shields.io/github/issues-raw/paulAlexSerban/wbk--algorithms-n-data-structures--javascript)![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/paulAlexSerban/wbk--algorithms-n-data-structures--javascript)
 
