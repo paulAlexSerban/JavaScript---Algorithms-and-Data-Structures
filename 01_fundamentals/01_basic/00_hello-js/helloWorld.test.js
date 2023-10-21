@@ -1,6 +1,6 @@
 const { helloWorld, helloWorldLogger } = require('./helloWorld');
 
-describe('Hello, World! test suite' , () => {
+describe('Hello, World! test suite', () => {
     test('It should return "Hello, World!"', () => {
         expect(helloWorld()).toBe('Hello, World!');
     });

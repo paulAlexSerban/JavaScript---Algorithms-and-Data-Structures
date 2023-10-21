@@ -7,7 +7,7 @@
     "scripts": {
         "formats:check": "yarn prettier --check .",
         "formats:write": "yarn prettier --write .",
-        "test": "jest"
+        "test": "yarn formats:write && jest"
     },
     "dependencies": {
         "lerna": "^7.3.0",
