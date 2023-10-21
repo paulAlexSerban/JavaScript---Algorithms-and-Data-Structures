@@ -6,10 +6,14 @@
     "license": "MIT",
     "scripts": {
         "formats:check": "yarn prettier --check .",
-        "formats:write": "yarn prettier --write ."
+        "formats:write": "yarn prettier --write .",
+        "test": "jest"
     },
     "dependencies": {
         "lerna": "^7.3.0",
         "prettier": "^3.0.3"
+    },
+    "devDependencies": {
+        "jest": "^29.7.0"
     }
 }
